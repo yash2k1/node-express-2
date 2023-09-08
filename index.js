@@ -14,8 +14,8 @@ app.use(AppMiddleware);
 app.use("/user",userRoutes);
 app.get("/home",(_,res)=>{
     res.send(`<h1>hello welcome to our server which is running on ${port}
-    to access primeContent=http://localhost:9000/user/primeContent?pwd=123 (pwd=123)
-    and to access login =http://localhost:9000/user/login?pwd=123 (pwd=123) </h1>`)
+   <br> to access primeContent=<a href="http://localhost:9000/user/primeContent?pwd=123">To primeContent</a> (pwd=123)
+   <br> and <br> to access login =<a href="http://localhost:9000/user/login?pwd=123">To login</a> (pwd=123) </h1>`)
 })
 app.get("/api/main",(_,res)=>{
     res.send(nodeData);
